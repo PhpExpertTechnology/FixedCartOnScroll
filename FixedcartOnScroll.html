@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha/css/bootstrap.css">
+</head>
+<body>
+	<div class="container">
+			<div class="col-md-12 last" id="header">
+				<h1>
+					Onlineshop
+				</h1>
+			</div>
+			<div class="clear col-md-9" id="products">
+				<div class="col-md-9 last product">
+					<div class="col-md-3 product-picture">
+						<small>Product picture</small>
+					</div>
+					<div class="col-md-6 last">
+						<div class="col-md-6 last product-name">
+							<h2>
+								Product Name
+							</h2>
+						</div>
+						<div class="clear col-md-6 last product-description">
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+							</p>
+							<p>Add product</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-9 last product">
+					<div class="col-md-3 product-picture">
+						<small>Product picture</small>
+					</div>
+					<div class="col-md-6 last">
+						<div class="col-md-6 last product-name">
+							<h2>
+								Product Name
+							</h2>
+						</div>
+						<div class="clear col-md-6 last product-description">
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+							</p>
+							<p>Add product</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-9 last product">
+					<div class="col-md-3 product-picture">
+						<small>Product picture</small>
+					</div>
+					<div class="col-md-6 last">
+						<div class="col-md-6 last product-name">
+							<h2>
+								Product Name
+							</h2>
+						</div>
+						<div class="clear col-md-6 last product-description">
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+							</p>
+							<p>Add product</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-9 last product">
+					<div class="col-md-3 product-picture">
+						<small>Product picture</small>
+					</div>
+					<div class="col-md-6 last">
+						<div class="col-md-6 last product-name">
+							<h2>
+								Product Name
+							</h2>
+						</div>
+						<div class="clear col-md-6 last product-description">
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+							</p>
+							<p>Add product</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-9 last product">
+					<div class="col-md-3 product-picture">
+						<small>Product picture</small>
+					</div>
+					<div class="col-md-6 last">
+						<div class="col-md-6 last product-name">
+							<h2>
+								Product Name
+							</h2>
+						</div>
+						<div class="clear col-md-6 last product-description">
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+							</p>
+							<p>Add product</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-9 last product">
+					<div class="col-md-3 product-picture">
+						<small>Product picture</small>
+					</div>
+					<div class="col-md-6 last">
+						<div class="col-md-6 last product-name">
+							<h2>
+								Product Name
+							</h2>
+						</div>
+						<div class="clear col-md-6 last product-description">
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+							</p>
+							<p>Add product</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3 last" id="shopping-cart">
+				<h3>
+					Shoppingcart
+				</h3>
+				<p>Some Product 100$</p>
+				<p>Some Product 100$</p>
+				<p>Some Product 100$</p>
+			</div>
+			<div class="clear col-md-12 last" id="footer">
+				Footer
+			</div>
+		</div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+<script>
+	$(document).ready(function() {  
+    // check where the shoppingcart-div is  
+    var offset = $('#shopping-cart').offset();  
+    $(window).scroll(function () {    
+        var scrollTop = $(window).scrollTop(); 
+        // check the visible top of the browser     
+        if (offset.top<scrollTop) {
+            $('#shopping-cart').addClass('fixed'); 
+        } else {
+            $('#shopping-cart').removeClass('fixed');   
+        }
+    }); 
+}); 
+</script>
+<style type="text/css" media="screen">
+	 .fixed {    
+    position: fixed;     
+    top: 20px;    
+    margin-left: 720px;    
+    background-color: #0f0 ! important; 
+} 
+</style>
+</html>
